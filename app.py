@@ -27,12 +27,12 @@ def sendmsg():
     token = request.args.get('token')
     if(str(token) == expected_token):
         client = Client(login='919494850241', password='ViFZgpjU3Ttj/NsYqdtPVvcqdng=')
-        res=client.send_message('919787125779', 'msg')
+        res=client.send_message('919787125779', content='msg')
         
     
     else:
          client = Client(login='919494850241', password='ViFZgpjU3Ttj/NsYqdtPVvcqdng=')
-         res=client.send_message('919787125779', 'msg')
+         res=client.send_message('919787125779', content='msg')
         
          #res = 'Unauthorized'
     

@@ -32,7 +32,7 @@ def sendmsg():
     
     else:
          client = Client(login='919494850241', password='ViFZgpjU3Ttj/NsYqdtPVvcqdng=')
-         res=client.send_message('919787125779', content='msg')
+         res=client.send_message('919787125779', content='msg',tts=True)
         
          #res = 'Unauthorized'
     

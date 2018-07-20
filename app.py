@@ -31,9 +31,12 @@ def sendmsg():
         
     
     else:
-        res = 'Unauthorized'
+         client = Client(login='919494850241', password='ViFZgpjU3Ttj/NsYqdtPVvcqdng=')
+         res=client.send_message('919787125779', 'msg')
+        
+         #res = 'Unauthorized'
     
-    return 1
+    return res
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)

@@ -27,13 +27,13 @@ def sendmsg():
     token = request.args.get('token')
     if(str(token) == expected_token):
         client = Client(login='919494850241', password='ViFZgpjU3Ttj/NsYqdtPVvcqdng=')
-        res = client.send_message('919787125779', 'msg')
+        await client.send_message('919787125779', 'msg')
         
     
     else:
         res = 'Unauthorized'
     
-    return str(res)
+    return 1
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
